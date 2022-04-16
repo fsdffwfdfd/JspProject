@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex; 
+            justify-content:center; 
+            align-items:center; 
+            height:80vh }
+        #main{
+            width:500px;
+            height:300px;
+            background-color:black;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #main::before{
+            display: inline-block;
+            content: "";
+            height: 100%;
+            vertical-align: middle;
+        }
+        #inner{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        button{
+            padding: 30px;
+            margin: 0 20px;
+            font-size: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="main">
+            <div id="inner">
+                <a href="memberList.jsp"><button>회원</button></a>
+                <a href="BoardList.jsp"><button>게시판</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
